@@ -1,0 +1,32 @@
+{
+  "name": "kiln-ts",
+  "version": "0.1.0",
+  "description": "Rails-style convention-over-configuration framework for TypeScript.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "kiln": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "src/templates"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && npm run copy-templates",
+    "copy-templates": "node ./scripts/copy-templates.mjs",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "prompts": "^2.4.2",
+    "kleur": "^4.1.5",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.4",
+    "@types/node": "^22.5.0",
+    "@types/fs-extra": "^11.0.4",
+    "@types/prompts": "^2.4.9"
+  }
+}
