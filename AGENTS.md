@@ -4,6 +4,7 @@ This file is for AI coding agents (Claude Code, Cursor, etc.) working
 in a Kiln app or on the Kiln framework itself. It's the same content
 as CONVENTIONS.md, restated as direct instructions.
 
+
 ## If you are working inside a generated Kiln app
 
 1. **Routing is automatic.** Never hand-write a route or an Express
